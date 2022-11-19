@@ -1,0 +1,102 @@
+@use "./variables.scss";
+@use "./mixins.scss";
+
+// Declaring block font properties
+// fp - fontProperty<size>
+
+.fp-s {
+  line-height: variables.$lh--s;
+  font: {
+    font-family: Axiforma;
+    size: variables.$fs--s;
+    weight: variables.$fw--s;
+  }
+}
+
+.fp-m {
+  line-height: variables.$lh--m;
+  font: {
+    font-family: Axiforma;
+    size: variables.$fs--m;
+    weight: variables.$fw--s;
+  }
+}
+
+.pric {
+  font: {
+    size: variables.$fs--m;
+    weight: variables.$fw--l;
+    color: variables.$darkBlue;
+  }
+}
+
+.fp-l {
+  line-height: variables.$lh--m;
+  font: {
+    font-family: Axiforma;
+    size: variables.$fs--l;
+    weight: variables.$fw--m;
+  }
+}
+
+.fp-xl {
+  line-height: variables.$lh--l;
+  font: {
+    size: variables.$fs--xl;
+    weight: variables.$fw--l;
+  }
+}
+
+.sub-textbox {
+  margin: 0 auto;
+  margin-block: 4rem;
+}
+
+.orange {
+  color: variables.$orange;
+}
+
+.bg-color--1 {
+  background-color: variables.$orange;
+}
+
+.container {
+  @include mixins.flex($fd: column);
+  text-align: left;
+}
+
+.textbox {
+  width: 680px;
+  text-align: left;
+}
+
+.error {
+  color: variables.$error;
+}
+
+// MARGIN TOP CLASSES
+.m-top-small {
+  margin-top: 1rem;
+}
+
+.m-top-medium {
+  margin-top: 1.5rem;
+}
+
+.m-top-xl {
+  margin-top: 3rem;
+}
+
+// MARGIN BOTTOM
+.m-bottom-large {
+  margin-top: 2.5rem;
+}
+
+.m-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.pos-r {
+  position: relative;
+  border: 2px solid blue;
+}

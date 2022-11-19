@@ -1,0 +1,33 @@
+@use "../abstract//variables.scss";
+@use "../abstract/mixins.scss";
+
+.btn {
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: variables.$fw--m;
+  text-align: center;
+  background-color: variables.$orange;
+
+  span {
+    display: inline-block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.btn-aux {
+  border: none;
+  background-color: transparent;
+}
+
+.btn {
+  &:disabled {
+    background: variables.$grey;
+  }
+}
+
+.btn.size {
+}

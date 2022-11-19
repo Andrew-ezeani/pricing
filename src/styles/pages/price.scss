@@ -1,0 +1,30 @@
+@use "../abstract//mixins.scss";
+@use "../abstract//variables.scss";
+@import "../abstract/functions.scss";
+
+.price {
+  &__container {
+    @include mixins.flex($jc: space-between);
+    width: 100%;
+  }
+
+  &__textbox {
+    width: pxToRem(950);
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    span {
+      display: block;
+      font-size: variables.$fs--l;
+    }
+  }
+
+  &__sub-text {
+    letter-spacing: 0em;
+
+    span {
+      display: block;
+    }
+  }
+}

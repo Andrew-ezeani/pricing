@@ -1,0 +1,43 @@
+const priceData = [
+  {
+    id: 1,
+    package: "Basic",
+    price: "free",
+    info1: "2 GB free storage space",
+    info2: "10 free trials",
+    info3: "Image upload not more than 16MB",
+    info4: "Live chat",
+    info5: "24/7 Hour support",
+    info6: "Gain access to uploads by others",
+    info7: "Faster processing speed",
+    info8: "Upload two images simultaneously",
+  },
+  {
+    id: 2,
+    package: "Standard",
+    price: "$14",
+    info1: "25 free trials",
+    info2: "10 free trials",
+    info3: "Image upload not more than 200MB",
+    info4: "Live chat",
+    info5: "24/7 Hour support",
+    info6: "Gain access to uploads by others",
+    info7: "Faster processing speed",
+    info8: "Upload two images simultaneously",
+  },
+  {
+    id: 3,
+    package: "Premium",
+    price: "$40",
+    info1: "Unlimited free storage space",
+    info2: "40 free trials ",
+    info3: "Image upload not more than 500MB",
+    info4: "Live chat",
+    info5: "24/7 Hour support",
+    info6: "Gain access to uploads by others",
+    info7: "Faster processing speed",
+    info8: "Upload multiple images simutaneously",
+  },
+];
+
+export default priceData;

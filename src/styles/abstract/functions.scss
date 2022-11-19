@@ -1,0 +1,7 @@
+@function convertPxToRem($px) {
+  @return calc($px / 16) + rem;
+}
+
+@function convertToLineHeight($px) {
+  @return calc($px / 1.5);
+}

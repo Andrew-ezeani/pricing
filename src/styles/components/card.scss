@@ -1,0 +1,50 @@
+@use "../abstract/variables.scss";
+@use "../abstract//mixins.scss";
+
+.price {
+  &__box {
+    min-height: 606px;
+    width: 400px;
+    left: 0px;
+    top: 0px;
+    border-radius: 16px;
+    border: 1px solid variables.$borderColor;
+    padding: 50px;
+    text-align: left;
+
+    &:nth-child(2) {
+      background-color: variables.$orange;
+      color: variables.$white;
+    }
+  }
+
+  &__package {
+    .underline {
+      display: block;
+      margin-top: 1rem;
+      width: 80px;
+      height: 4px;
+      background-color: variables.$orange;
+    }
+  }
+
+  &__features {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 2.8;
+      color: variables.$orange;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__heading {
+    @include mixins.flex($jc: space-between, $ai: flex-start);
+  }
+}

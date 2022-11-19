@@ -1,0 +1,15 @@
+@use "./variables.scss";
+
+@mixin flex($fd: row, $ai: center, $jc: center, $gap: 0) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

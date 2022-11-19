@@ -1,0 +1,58 @@
+@use "../abstract//mixins.scss";
+@use "../abstract//variables.scss";
+
+.toggle-box {
+  @include mixins.flex($gap: 10px);
+  margin-bottom: 4rem;
+
+  input {
+    appearance: none;
+    position: relative;
+    width: 60px;
+    height: 27px;
+    border-radius: 24px;
+    background-color: variables.$grey;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+
+    &::before {
+      display: none;
+      content: "ON";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      font-size: 15px;
+      font-weight: 600;
+      color: variables.$white;
+      transform: translate(-50%, -50%);
+
+      transition: left 0.5s ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 13px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 18px;
+      aspect-ratio: 1/1;
+      background-color: variables.$white;
+      transition: left 0.5s ease;
+    }
+
+    &:checked {
+      background-color: variables.$orange;
+
+      &::before {
+        display: block;
+      }
+
+      &::after {
+        left: 79%;
+      }
+    }
+  }
+}

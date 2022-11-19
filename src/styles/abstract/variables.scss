@@ -1,0 +1,29 @@
+@use "./functions.scss";
+
+$orange: #ff6c00;
+$greyShade: #1d1d1d;
+$error: #f04438;
+$blueSecondary: #092c4c;
+$blackShade: #181616;
+$white: #ffffff;
+$borderColor: #adb9c3;
+$darkBlue: #092c4c;
+$grey: #d2d2d2;
+$darkGrey: #686868;
+$inputFocus: #ffe2cc;
+
+// Font Sizes
+$fs--s: functions.convertPxToRem(16);
+$fs--m: functions.convertPxToRem(20);
+$fs--l: functions.convertPxToRem(24);
+$fs--xl: functions.convertPxToRem(36);
+
+// FONT WEIGHTS
+$fw--s: 400;
+$fw--m: 600;
+$fw--l: 700;
+
+// LINE HEIGHT
+$lh--s: 0.5;
+$lh--m: 1;
+$lh--l: 1.5;
